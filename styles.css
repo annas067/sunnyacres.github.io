@@ -1,0 +1,251 @@
+/* Reset some basic elements */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+address {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body and font styles */
+body {
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  background-color: #f8f0e3; /* Light background color */
+  color: #333; /* Dark text color for readability */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container to center the content and apply padding */
+.container {
+  width: 80%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  color: #d7503e; /* Darker red */
+  padding: 10px 20px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 150px; /* Adjust the size of the logo as needed */
+  height: auto;
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header-right {
+  text-align: top;
+  margin-top: 6px;
+}
+
+.address-top {
+  font-size: 1em;
+}
+
+.didact-gothic-regular {
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.cloister-regular {
+  font-family: "Cloister Black", sans-serif;
+}
+
+.logo-text .sunny {
+  margin-left: 13px; /* Adjust the margin to add space before "Sunny" */
+  margin-top: 9px;
+  font-weight: 200; /* Regular weight */
+  font-size: 2.8em; /* Adjust size as needed */
+  line-height: 35px;
+}
+
+.logo-text .acres {
+  /* margin-bottom: -10px; */
+  font-weight: 570; /* Bold weight */
+  font-size: 6.5em; /* Adjust size as needed */
+  line-height: 1;
+}
+
+header address {
+  font-style: normal;
+}
+
+/* Main content wrapper to align nav and main content */
+.main-content {
+  display: flex;
+}
+
+/* Navigation styles */
+nav {
+  margin: 8px;
+  background-color: #db7093; /* Pale violet red */
+  /* padding: 20px; */
+  width: 270px; /* Fixed width for sidebar */
+  height: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+/* nav ul li {
+  padding: 10px 10px;
+} */
+
+nav ul li button {
+  display: block;
+
+  color: white;
+  background-color: #f5aaaf;
+  border: none;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 20px 20px;
+  text-align: left;
+  transition: background-color 0.3s, color 0.3s;
+  width: 100%; /* Occupy full width of parent li */
+  cursor: pointer;
+}
+
+nav ul li button:hover {
+  background-color: #c05177; /* Darker shade */
+  color: #fff;
+}
+
+nav ul li button:active {
+  background-color: #b0456b; /* Even darker shade */
+}
+
+nav ul li button.active {
+  background-color: #ffb6c1; /* Light pink */
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Main content styles */
+main {
+  padding: 8px;
+  flex: 1;
+}
+
+/* Font size for paragraphs in the main content */
+main p {
+  font-size: 1.5em; /* Increase the font size as needed */
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* Flex container for text and image */
+.content-wrapper {
+  display: flex;
+  align-items: flex-start; /* Align items at the start */
+  gap: 20px; /* Space between text and image */
+}
+
+/* New styles for the content container */
+.content-container {
+  background-color: pink; /* Pink background */
+  padding: 15px;
+  max-height: 500px;
+  border-radius: 5px; /* Optional: rounded corners */
+  margin-bottom: 20px; /* Space below the container */
+}
+
+.content-content {
+  float: left;
+  background-color: white; /* White background for inner content */
+  padding: 10px;
+  border-radius: 5px; /* Optional: rounded corners */
+  text-align: left;
+  font-size: 1.1em;
+  height: auto;
+  margin-right: 20px;
+  width: 40%;
+}
+.text-content {
+  flex: 1; /* Allows text container to take up the remaining space */
+}
+/* Ensure the image fits within the container */
+.image-content img {
+  float: left; /* Or right, depending on desired text flow */
+  width: 40%; /* Adjust width as necessary */
+  margin-right: 20px; /* Spacing between the image and text */
+  height: auto;
+}
+
+.image-content {
+  margin-bottom: 20px; /* Spacing below the image and text content */
+}
+
+/* Style for h2 */
+main h2 {
+  color: white; /* Text color */
+  background-color: #963644; /* Background color */
+  letter-spacing: 20px; /* Space between letters */
+  padding: 20px; /* Padding for better readability */
+  text-align: center; /* Center text alignment */
+  border-radius: 5px; /* Optional: rounded corners for better appearance */
+  font-size: 3.4em;
+  margin-bottom: 40px;
+}
+
+.figure-text {
+  text-align: center;
+}
+
+.hours,
+.directions {
+  background-color: white; /* Cornsilk color */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.hours h3,
+.directions h3 {
+  color: white; /* Golden color */
+  background-color: darkgoldenrod;
+  font-weight: bold; /* Bold text */
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 20px; /* Space between letters */
+  font-size: 1.5em; /* Increase font size or adjust as needed */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Footer styles */
+footer {
+  background-color: #a52a2a;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9em;
+  margin-top: 20px;
+}
